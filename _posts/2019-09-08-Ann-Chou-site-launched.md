@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "chounky.github.io, A coding journey Work in Progress"
+title: "A coding journey Work in Progress - Launches Site"
 date: 2019-09-08
 ---
 
