@@ -1,3 +1,4 @@
 name : chounky.github.io, A coding journey Work in Progress
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+plugins: - jekyll-sitemap
