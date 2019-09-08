@@ -1,25 +1,20 @@
 ---
 layout: default
-notes: active
+include: analytics
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
 <div class="post">
-  {{ content }}
-</div>
-
-<div class="notes">
-		<div class="note single">
+		<div class="post single">
 			<h1 class="title">{{ page.title }}</h1>
 			
 			<h2 class="date"><info datetime="{{ page.date }}">
 				{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
 			</info></h2>
+			
 			<!-- Post content -->
-			<div class="notebody">
+			<div class="postbody">
 				{{ content }}
 			</div>
+			
 			<!-- Post info -->
 			<div class="noteinfo">
 			<!-- include some categories and tags maybe? -->
@@ -28,8 +23,8 @@ notes: active
 			<hr>
 
 			<!-- Post comments -->
-			<div class="notecomments">
+			<div class="postcomments">
 				{% include disqus.html %}	 
 			</div>
-		</div><!-- / .note .single -->
-</div><!-- /.notes -->
+		</div><!-- / .post .single -->
+</div><!-- /.post -->
